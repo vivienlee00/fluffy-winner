@@ -5,8 +5,8 @@ var boxWidth = box.offsetWidth;
 console.log(box);
 //hardcode target as center
 //randomize later
-var targetX = boxWidth / 2;
-var targetY = boxHeight / 2;
+var targetX = boxWidth * Math.random();
+var targetY = boxHeight * Math.random();
 
 
 console.log( "box height: " + boxHeight );
@@ -27,7 +27,7 @@ var findIt = function(e) {
     var colorval = (dist / maxdist);
     console.log(dist);
     console.log(maxdist);
-    box.setAttribute("style", "background-color: rgba(0,0,0,"+ colorval + ");");
+    box.setAttribute("style", "background-color: rgba(255,54,131,"+ colorval + ");");
     console.log("background-color: rgba(0,0,0,"+ colorval + ");");
 };
 
