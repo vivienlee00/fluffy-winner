@@ -30,7 +30,7 @@ var findIt = function(e) {
     box.setAttribute("style", "background-color: rgba(255,54,131,"+ colorval + ");");
     console.log("background-color: rgba(0,0,0,"+ colorval + ");");
 
-    if(colorval < 0.05){
+    if(colorval < 0.01){
 	text.innerHTML = "You found it!!!!!!!";
     }
 };
