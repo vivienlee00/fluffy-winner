@@ -31,7 +31,8 @@ var findIt = function(e) {
     console.log("background-color: rgba(0,0,0,"+ colorval + ");");
 
     if(colorval < 0.01){
-	text.innerHTML = "You found it!!!!!!!";
+	//text.innerHTML = "You found it!!!!!!!";
+	alert("AHHH");
     }
 };
 
