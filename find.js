@@ -29,6 +29,10 @@ var findIt = function(e) {
     console.log(maxdist);
     box.setAttribute("style", "background-color: rgba(255,54,131,"+ colorval + ");");
     console.log("background-color: rgba(0,0,0,"+ colorval + ");");
+
+    if(colorval < 0.05){
+	text.innerHTML = "You found it!!!!!!!";
+    }
 };
 
 /*
@@ -57,6 +61,7 @@ var findmax = function() {
 }
 
 var maxdist = findmax(); 
-
+const text = document.createElement("p");
+document.getElementsByTagName("body")[0].appendChild(text);
 box.addEventListener("mousemove", findIt);
 
